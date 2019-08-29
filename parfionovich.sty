@@ -1,9 +1,20 @@
-\usepackage{fontmisc}
+\usepackage{fontspec}
+\usepackage{xltxtra}
 \usepackage[russian,english]{babel}
 \usepackage{nccfoots}
+\usepackage{color}
+\setmainfont{CMU Serif} % основной шрифт текста
 
 \newfontfamily\tibfont{Tibetan Machine Uni}
 
 \newcommand{\prfA}[1]{{\tibfont #1} }
 \newcommand{\prfB}[2]{{\tibfont #1} \textit{#2} }
 \newcommand{\prfC}[3]{{\tibfont #1} \textit{#2} \textrm{#3} }
+
+%сноски с собственной нумерацией
+\newcounter{PrfFNCounter}[page]
+\newcommand{\prfnote}[1]{\stepcounter{PrfFNCounter}\Footnote{\Asbuk{PrfFNCounter}}{#1}}
+
+%
+\newcommand{\ul}[1]{\underline{#1}}
+\newcommand{\hl}[1]{\colorbox{yellow}{#1}}

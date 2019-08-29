@@ -1,3 +1,4 @@
+% !TEX program = xelatex
 \documentclass[a4paper,12pt]{scrbook}
 \input{parfionovich.sty}
 \author{Парфионович Юрий Михайлович}
@@ -5,4 +6,17 @@
 
 \begin{document}
 \maketitle
+here> \prfA{སྐྱེས་མི་འགག་ནམ་མཁའི་ངོ་བོ་ཉིད།} <here\par
+\prfB{སྐྱེས་མི་འགག་ནམ་མཁའི་ངོ་བོ་ཉིད། }{test and test}\par
+\prfC{སྐྱེས་མི་འགག་ནམ་མཁའི་ངོ་བོ་ཉིད། }{test and test}{и это тест}\par
+\prfC{སྐྱེས་མི་འགག་ནམ་མཁའི་ངོ་བོ་ཉིད། }{test and test}{'еще это тест'}\par
+
+Это тест двойных сносок\footnote[2]{Сноска с номером 2}, моих сносок\prfnote{Моя сноска с буквой} и сносок\footnote{Это номер по умолчанию}
+
+Проверка \ul{подчеркивания}, выделения \hl{цветом}, диакритический знак \.a\b{b}
+
+\clearpage
+Страница 1. Моя 1) сноска \prfnote{Моя сноска с буквой} 2) сноска\prfnote{Моя сноска с буквой}
+\clearpage
+Страница 2. Моя 1) сноска \prfnote{Моя сноска с буквой} 2) сноска\prfnote{Моя сноска с буквой}
 \end{document}
