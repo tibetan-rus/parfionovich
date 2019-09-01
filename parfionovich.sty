@@ -3,11 +3,28 @@
 \usepackage[english,russian]{babel}
 \usepackage{nccfoots}
 \usepackage{color}
+\usepackage{longtable}
+\usepackage{topcapt}
+\usepackage{diagbox}
+\usepackage{cellspace}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{float}
 
 \setmainfont{CMU Serif} % основной шрифт текста
 
 \newfontfamily\tibfont{Tibetan Machine Uni}
 \newfontfamily\unifont{Arial Unicode MS}
+\newfontfamily\mainfont{CMU Serif}
+\setkomafont{chapter}{\mainfont\huge}
+\setkomafont{section}{\mainfont\Large}
+\setkomafont{title}{\mainfont\Huge}
+
+\definecolor{linkcolor}{HTML}{FF0000} % цвет ссылок
+\definecolor{urlcolor}{HTML}{FF0000} % цвет гиперссылок
+
+\hypersetup{linkcolor=linkcolor,urlcolor=urlcolor, colorlinks=true}
 
 \newcommand{\prfA}[1]{{\tibfont #1}}
 \newcommand{\prfB}[2]{{\tibfont #1} \textit{#2}}
@@ -20,3 +37,29 @@
 %
 \newcommand{\ul}[1]{\underline{#1}}
 \newcommand{\hl}[1]{\colorbox{yellow}{#1}}
+
+%определение тональностей
+\newcommand{\toneR}{
+    \begin{tikzpicture}
+        \draw (0,10pt) -- (6pt,10pt) -- (6pt,0pt);
+    \end{tikzpicture}
+} %ровный
+\newcommand{\toneV}{
+    \begin{tikzpicture}
+        \draw (0,0pt) -- (6pt,5pt);
+        \draw (6pt,0pt) -- (6pt,10pt);
+    \end{tikzpicture}
+} %восходящий
+\newcommand{\toneN}{
+    \begin{tikzpicture}
+        \draw (0,10pt) -- (6pt,5pt);
+        \draw (6pt,0pt) -- (6pt,10pt);
+    \end{tikzpicture}
+} %нисходящий
+\newcommand{\toneVN}{
+    \begin{tikzpicture}
+        \draw (0pt,5pt) -- (3pt,10pt) -- (6pt,5pt);
+        \draw (6pt,0pt) -- (6pt,10pt);
+    \end{tikzpicture}
+} %восходяще-падающий
+
