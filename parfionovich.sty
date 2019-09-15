@@ -17,12 +17,16 @@
 \usepackage{mathtools}
 \usepackage{makecell}
 \usepackage{textgreek}
+\usepackage{multicol}
+\usepackage{tabu}
 
 \setmainfont{CMU Serif} % основной шрифт текста
 
 \newfontfamily\tibfont{Tibetan Machine Uni}
+%TODO: разделить шрифты китайского и юникод
 \newfontfamily\unifont{Arial Unicode MS}
 \newfontfamily\mainfont{CMU Serif}
+\setkomafont{chapterentry}{\mainfont}
 \setkomafont{chapter}{\mainfont\huge}
 \setkomafont{section}{\mainfont\Large}
 \setkomafont{title}{\mainfont\Huge}
@@ -45,27 +49,29 @@
 \newcommand{\hl}[1]{\colorbox{yellow}{#1}}
 
 %определение тональностей
-\newcommand{\toneR}{
-    \begin{tikzpicture}
-        \draw (0,10pt) -- (6pt,10pt) -- (6pt,0pt);
-    \end{tikzpicture}
-} %ровный
-\newcommand{\toneV}{
-    \begin{tikzpicture}
-        \draw (0,0pt) -- (6pt,5pt);
-        \draw (6pt,0pt) -- (6pt,10pt);
-    \end{tikzpicture}
-} %восходящий
-\newcommand{\toneN}{
-    \begin{tikzpicture}
-        \draw (0,10pt) -- (6pt,5pt);
-        \draw (6pt,0pt) -- (6pt,10pt);
-    \end{tikzpicture}
-} %нисходящий
-\newcommand{\toneVN}{
-    \begin{tikzpicture}
-        \draw (0pt,5pt) -- (3pt,10pt) -- (6pt,5pt);
-        \draw (6pt,0pt) -- (6pt,10pt);
-    \end{tikzpicture}
-} %восходяще-падающий
+%параметры высоты-ширины
+\newlength{\toneHeight}
+\setlength{\toneHeight}{10pt}
+\newlength{\toneHeightH}
+\setlength{\toneHeightH}{5pt}
+\newlength{\toneWidth}
+\setlength{\toneWidth}{4pt}
+\newlength{\toneWidthH}
+\setlength{\toneWidthH}{2pt}
+
+\newcommand{\toneR}{\begin{tikzpicture}
+        \draw (0pt,\toneHeight) -- (\toneWidth,\toneHeight) -- (\toneWidth,0pt);
+    \end{tikzpicture}} %ровный
+\newcommand{\toneV}{\begin{tikzpicture}
+        \draw (0,0pt) -- (\toneWidth,\toneHeightH);
+        \draw (\toneWidth,0pt) -- (\toneWidth,\toneHeight);
+    \end{tikzpicture}} %восходящий
+\newcommand{\toneN}{\begin{tikzpicture}
+        \draw (0,\toneHeight) -- (\toneWidth,\toneHeightH);
+        \draw (\toneWidth,0pt) -- (\toneWidth,\toneHeight);
+    \end{tikzpicture}} %нисходящий
+\newcommand{\toneVN}{\begin{tikzpicture}
+        \draw (0pt,\toneHeightH) -- (\toneWidthH,\toneHeight) -- (\toneWidth,\toneHeightH);
+        \draw (\toneWidth,0pt) -- (\toneWidth,\toneHeight);
+    \end{tikzpicture}} %восходяще-падающий
 \newcommand{\toneG}{\textraiseglotstop}
