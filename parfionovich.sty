@@ -20,10 +20,12 @@
 \usepackage{multicol}
 \usepackage{tabu}
 \usepackage{ltablex}
+\usepackage{indentfirst} % отделять первую строку раздела абзацным отступом
 
 \setmainfont{CMU Serif} % основной шрифт текста
 
-\newfontfamily\tibfont{Tibetan Machine Uni}
+\newfontfamily\tibfont[Script=Tibetan,Scale=MatchUppercase,
+HyphenChar="0F0B]{Tibetan Machine Uni}
 \newfontfamily\chinfont{Noto Serif CJK TC}
 \newfontfamily\unifont{Arial Unicode MS}
 \newfontfamily\mainfont{CMU Serif}
@@ -85,3 +87,5 @@
 \newcolumntype{C}[1]{>{\hsize=#1\hsize\centering\arraybackslash}X}%
 
 \renewcommand{\arraystretch}{1.5}%
+
+\setlength{\parskip}{0.3cm}
