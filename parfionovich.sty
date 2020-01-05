@@ -13,7 +13,7 @@
 \usepackage{float}
 \usepackage{multirow}
 \usepackage{rotating}
-\usepackage{tipa}
+\usepackage[tone]{tipa}
 \usepackage{mathtools}
 \usepackage{makecell}
 \usepackage{textgreek}
@@ -52,6 +52,7 @@ HyphenChar="0F0B]{Tibetan Machine Uni}
 %
 \newcommand{\ul}[1]{\underline{#1}}
 \newcommand{\hl}[1]{\colorbox{yellow}{#1}}
+\newcommand{\sel}[1]{\textcolor{magenta}{#1}}
 
 %определение тональностей
 %параметры высоты-ширины
@@ -92,3 +93,11 @@ HyphenChar="0F0B]{Tibetan Machine Uni}
 \setlength{\parskip}{0.3cm}
 
 \newcommand{\vertcell}[2]{\rotatebox{90}{\parbox{#1}{#2}}}
+
+\newenvironment{prfsample}
+    {\begin{list}{}{%
+        \setlength{\labelwidth}{0pt}%
+        \setlength{\itemindent}{0pt}%
+        \setlength{\leftmargin}{\widthof{AAA}}%
+    }}
+    {\end{list}}
