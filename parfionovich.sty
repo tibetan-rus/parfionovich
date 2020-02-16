@@ -31,6 +31,7 @@ HyphenChar="0F0B]{Tibetan Machine Uni}
 \newfontfamily\chinfont{Noto Serif CJK TC}
 \newfontfamily\unifont{Arial Unicode MS}
 \newfontfamily\mainfont{CMU Serif}
+\newfontfamily\extlatinfont{Charis SIL}
 \setkomafont{chapterentry}{\mainfont}
 \setkomafont{chapter}{\mainfont\huge}
 \setkomafont{section}{\mainfont\Large}
@@ -45,7 +46,7 @@ HyphenChar="0F0B]{Tibetan Machine Uni}
 \newcommand{\prfA}[1]{{\Large\tibfont #1}}
 \newcommand{\prfB}[2]{{\Large\tibfont #1} \textit{#2}}
 \newcommand{\prfC}[3]{{\Large\tibfont #1} \textit{#2} \textrm{#3}}
-
+\newcommand{\mfa}[1]{\textit{\extlatinfont #1}}
 %сноски с собственной нумерацией
 \newcounter{PrfFNCounter}[page]
 \newcommand{\prfnote}[1]{\stepcounter{PrfFNCounter}\Footnote{\Asbuk{PrfFNCounter}}{#1}}
@@ -81,7 +82,7 @@ HyphenChar="0F0B]{Tibetan Machine Uni}
         \draw (0pt,\toneHeightH) -- (\toneWidthH,\toneHeight) -- (\toneWidth,\toneHeightH);
         \draw (\toneWidth,0pt) -- (\toneWidth,\toneHeight);
     \end{tikzpicture}} %восходяще-падающий
-\newcommand{\toneG}{\textraiseglotstop}
+\newcommand{\toneG}{{\mfa ʔ}}
 
 \tabulinesep=1mm
 
