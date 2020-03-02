@@ -6,13 +6,15 @@
 
 Все корневые графемы тибетского алфавита располагаются в определённом порядке: слева направо по классам и сверху вниз по рядам (см. таб. \ref{tab:1})\prfnote{Здесь и далее до описания систем транслитерации используется Международный фонетический алфавит \href{https://ru.wikipedia.org/wiki/Международный\_фонетический\_алфавит}{https://ru.wikipedia.org/wiki/Международный\_фонетический\_алфавит}. }.
 
-\begin{tabularx}{\textwidth}{|C{1}|C{1}|C{1}|C{1}|C{1}|}
+\begin{tabularx}{\linewidth}{*{5}{c@{\hspace{2em}}}}
 	\caption{Корневые графемы тибетского языка}\label{tab:1}
 	\\
-		\hline
-	\diagbox{Класс}{Ряд} & 1 & 2 & 3 & 4\\
-	\endfirsthead
-	\hline
+    \toprule
+    \multirow{2}{*}{Класс} & \multicolumn{4}{c}{Ряд}\\
+    \cmidrule{2-5}
+	 & 1 & 2 & 3 & 4\\
+	\endhead
+	\midrule
 	1 & \prfB{ཀ}{\mfa{ka}} \toneR & \prfB{ཁ}{\mfa{k'a}} \toneR & \prfB{ག}{\mfa{k'a}} \toneV & \prfB{ང}{\mfa{ṅa}} \toneV \\
 	2 & \prfB{ཅ}{\mfa{tsja}} \toneR & \prfB{ཆ}{\mfa{ts'ja}} \toneR & \prfB{ཇ}{\mfa{ts'ja}} \toneV & \prfB{ཉ}{\mfa{nja}} \toneV \\
 	3 & \prfB{ཏ}{\mfa{ta}} \toneR & \prfB{ཐ}{\mfa{t'a}} \toneR & \prfB{ད}{\mfa{t'a}} \toneV & \prfB{ན}{\mfa{na}} \toneV \\
@@ -21,18 +23,25 @@
 	6 & \prfB{ཞ}{\mfa{sja}} \toneV & \prfB{ཟ}{\mfa{sa}} \toneV & \prfB{འ}{\mfa{a}} \toneV & \prfB{ཡ}{\mfa{ja}} \toneV \\
 	7 & \prfB{ར}{\mfa{ra}} \toneV & \prfB{ལ}{\mfa{la}} \toneV & \prfB{ཤ}{\mfa{sja}} \toneR & \prfB{ས}{\mfa{sa}} \toneR \\
 	8 & \prfB{ཧ}{\mfa{ha}} \toneR & \prfB{ཨ}{\mfa{a}} & & \\
-	\hline
+	\bottomrule
 \end{tabularx}
 
 Тибетские национальные грамматики делят корневые графемы от \prfB{ཀ}{\mfa{ka}} до \prfB{ཧ}{\mfa{ha}} на пять категорий в зависимости от твердости (\prfA{དམ་པ་}) произношения, называя эти категории родовыми:
 
-\begin{tabularx}{\textwidth}{C{1}|C{1}}
-	Родовая категория & Согласные\\
-	Мужской род \prfA{(ཕོ་)} & \prfA{ཀ}, \prfA{ཅ}, \prfA{ཏ}, \prfA{པ}, \prfA{ཙ} (произносятся наиболее твёрдо)\\
-	Средний род \prfA{(མ་ནིང་)} & \prfA{ཁ}, \prfA{ཆ}, \prfA{ཐ}, \prfA{ཕ}, \prfA{ཚ}\\
-	Женский род \prfA{(མོ་)} & \prfA{ག}, \prfA{ཇ}, \prfA{ད}, \prfA{བ}, \prfA{ཛ}, \prfA{ཝ}, \prfA{ཞ}, \prfA{ཟ}, \prfA{འ}, \prfA{ཡ}\\
-	Совершенно женский род \prfA{(ཤིན་ཏུ་མོ་)} & \prfA{ཤ}, \prfA{ས}, \prfA{ང}, \prfA{ཉ}, \prfA{ན}, \prfA{མ}\\
-	Нейтральный род \prfA{(མོ་གཤམ་)} & \prfA{ར}, \prfA{ལ}, \prfA{ཧ} (произносятся наиболее неопределённо)
+\begin{tabularx}{\textwidth}{p{0.45\textwidth} p{0.45\textwidth}}
+    \toprule
+    \parbox{0.45\textwidth}{\centering Родовая категория} & \parbox{0.45\textwidth}{\centering Согласные}\\
+    \midrule
+    Мужской род (\prfA{ཕོ་}) & \parbox[t]{\linewidth}{\prfA{ཀ}, \prfA{ཅ}, \prfA{ཏ}, \prfA{པ}, \prfA{ཙ}\\  (произносятся наиболее твёрдо)}\\
+    \addlinespace
+	Средний род (\prfA{མ་ནིང་}) & \prfA{ཁ}, \prfA{ཆ}, \prfA{ཐ}, \prfA{ཕ}, \prfA{ཚ}\\
+    \addlinespace
+	Женский род (\prfA{མོ་}) & \prfA{ག}, \prfA{ཇ}, \prfA{ད}, \prfA{བ}, \prfA{ཛ}, \prfA{ཝ}, \prfA{ཞ}, \prfA{ཟ}, \prfA{འ}, \prfA{ཡ}\\
+    \addlinespace
+	Совершенно женский род (\prfA{ཤིན་ཏུ་མོ་}) & \prfA{ཤ}, \prfA{ས}, \prfA{ང}, \prfA{ཉ}, \prfA{ན}, \prfA{མ}\\
+    \addlinespace
+    Нейтральный род (\prfA{མོ་གཤམ་}) & \parbox[t]{\linewidth}{\prfA{ར}, \prfA{ལ}, \prfA{ཧ}\\(произносятся наиболее\\неопределённо)}\\
+    \bottomrule
 \end{tabularx}
 
 Приведённое выше деление согласных на соответствующие родовые категории связано с позицией корневых морфем в слоге (см. разд. \hyperref[sec:gss]{<<Графическая структура слога и его произношение>>}).
@@ -102,45 +111,45 @@
 
 Огласовки также не могут сочетаться с любой основой слога, особенно если последняя входит в состав производного слога. Это видно из следующей таблицы (таб. \ref{tab:2}). 
 
-\begin{tabularx}{\textwidth}{|L{3}|L{10}|L{17}|}
+\begin{tabularx}{\textwidth}{p{0.1\textwidth} p{0.4\textwidth} p{0.4\textwidth}}
 	\caption{Слоги, не принимающие огласовку}
 	\label{tab:2}\\
-		\hline
-	Огла\-совка & Характер слога & Слоги, не принимающие огласовку\\
-	\hline
+		\toprule
+	\parbox{0.1\textwidth}{\centering Огла\-совка} & \parbox{0.4\textwidth}{\centering Характер слога} & \parbox{0.4\textwidth}{\centering Слоги, не принимающие огласовку}\\
+	\midrule
 	\endhead
-	\rule{0cm}{5mm}
-	\multirow{4}{*}{\prfB{ ི}{\mfa{(i)}}} & простой & \prfA{ཁ}, \prfA{ང}, \prfA{ཕ}, \prfA{བ}, \prfA{ཝ}, \prfA{ཧ}\\
+	\addlinespace
+	\multirow[t]{4}{*}{\prfB{ ི}{\mfa{(i)}}} & простой & \prfA{ཁ}, \prfA{ང}, \prfA{ཕ}, \prfA{བ}, \prfA{ཝ}, \prfA{ཧ}\\
 	& с надписными графемами & \prfA{རྐ}, \prfA{རྒ}, \prfA{རྔ}, \prfA{རྗ}, \prfA{རྣ}, \prfA{རྦ}|\quad  \prfA{ལྐ}, \prfA{ལྒ}, \prfA{ལྔ}, \prfA{ལྤ}, \prfA{ལྦ}, \prfA{ལྷ}|\quad \prfA{སྐ}, \prfA{སྒ}, \prfA{སྔ}, \prfA{སྣ}, \prfA{སྤ}, \prfA{སྦ}, \prfA{སྩ}\\
-	\rule{0cm}{5mm}
+	\addlinespace
 	& с подписными графемами & \prfA{མྱ}|\quad \prfA{ཏྲ}, \prfA{པྲ}|\quad \prfA{ཀླ}, \prfA{བླ}, \prfA{ཟླ}, \prfA{སླ}\\
-	\rule{0cm}{5mm}
+	\addlinespace
 	& с надписными и подписными графемами & \prfA{རྐྱ}, \prfA{རྒྱ}, \prfA{རྨྱ}|\quad \hl{??}\hyperref[tab:2:spec1]{$^*$},\prfA{རྩྭ}|\quad \prfA{ཕྱྭ}|\quad \prfA{གྲྭ},\prfA{སྨྲ}\\ 
-	\hline
-	\rule{0cm}{5mm}
-	\multirow{4}{*}{\prfB{ ུ}{\mfa{(u)}}} & простой & \prfA{ཝ}\\
+	\midrule
+	\addlinespace
+	\multirow[t]{4}{*}{\prfB{ ུ}{\mfa{(u)}}} & простой & \prfA{ཝ}\\
 	& с надписными графемами & \prfA{རྙ}, \prfA{རྦ}|\quad \prfA{ལྒ}, \prfA{ལྔ}, \prfA{ལྗ}, \prfA{ལྤ}|\quad \prfA{སྩ}\\
-	\rule{0cm}{5mm}
+	\addlinespace
 	& с подписными графемами & \prfA{པྱ}|\quad \prfA{ཏྲ}, \prfA{ཐྲ}, \prfA{པྲ}, \prfA{ཧྲ}\\
-	\rule{0cm}{5mm}
+	\addlinespace
 	& с надписными и подписными графемами & \prfA{རྐྱ}, \prfA{རྨྱ}|\quad \hl{??}\hyperref[tab:2:spec1]{$^*$}, \prfA{རྩྭ}|\quad \prfA{ཕྱྭ}|\quad \prfA{སྦྱ}|\quad \prfA{སྨྲ}\\
-	\hline
-	\rule{0cm}{5mm}
-	\multirow{4}{*}{\prfB{ ེ}{(e)}} & простой & \prfA{ཝ}, \prfA{འ}\\
+	\midrule
+	\addlinespace
+	\multirow[t]{4}{*}{\prfB{ ེ}{\mfa{(e)}}} & простой & \prfA{ཝ}, \prfA{འ}\\
 	& с надписными графемами & \prfA{རྒ}, \prfA{རྣ}, \prfA{རྦ}|\quad \prfA{ལྐ}, \prfA{ལྒ}, \prfA{ལྔ}, \prfA{ལྗ}, \prfA{ལྤ}, \prfA{ལྦ}|\quad \prfA{སྔ}, \prfA{སྩ}\\
-	\rule{0cm}{5mm}
+	\addlinespace
 	& с подписными графемами & \prfA{པྱ}, \prfA{མྱ}|\quad \prfA{ཏྲ}, \prfA{ཐྲ}, \prfA{པྲ}|\quad \prfA{ཀླ}, \prfA{བླ}, \prfA{ཟླ}, \prfA{སླ}\\
-	\rule{0cm}{5mm}
+	\addlinespace
 	& с надписными и подписными графемами & \prfA{རྒྱ}, \prfA{རྨྱ}|\quad \hl{??}\hyperref[tab:2:spec1]{$^*$}, \prfA{རྩྭ}|\quad \prfA{ཕྱྭ}, \prfA{གྲྭ}|\quad \prfA{སྤྱ}, \prfA{སྦྱ}, \prfA{སྨྱ}\\
-	\hline
-	\rule{0cm}{5mm}
-	\multirow{4}{*}{\prfB{ ོ}{\mfa{(o)}}} & простой & \prfA{ཝ}\\
+	\midrule
+	\addlinespace
+	\multirow[t]{4}{*}{\prfB{ ོ}{\mfa{(o)}}} & простой & \prfA{ཝ}\\
 	& с надписными графемами & \prfA{ལྒ}, \prfA{ལྔ}, \prfA{ལྤ}, \prfA{ལྦ}\\
-	\rule{0cm}{5mm}
+	\addlinespace
 	& с подписными графемами & \prfA{དྲ}, \prfA{ཐྲ}, \prfA{མྲ}\\
-	\rule{0cm}{5mm}
+	\addlinespace
 	& с надписными и подписными графемами & \prfA{རྨྱ}|\quad \hl{??}\hyperref[tab:2:spec1]{$^*$}, \prfA{རྩྭ}|\quad \prfA{ཕྱྭ}|\quad \prfA{གྲྭ}|\quad \prfA{སྦྲ}\\
-	\hline
+	\bottomrule
 \end{tabularx}
 {\footnotesize{\label{tab:2:spec1}* В таблице приведен слог, которые невозможно отобразить современными средствами: \textit{rgrwa}. Возможно, это описка. Следует уточнить в других источниках.}}
  
@@ -148,31 +157,29 @@
 
 Тибетский производный слог читается по корневой графеме, выступающей основой слога. Компоненты производного слога оказывают влияние на чтение основы слога, определяя произношение слога в целом. Влияние компонентов слога может заключаться в: а) изменении тона корневой (читаемой) графемы; б) озвончении её; в) изменении качества гласного основы; г) появлении полугласного; д) изменении согласного звука основы; е) назализации согласного звука основы. Кроме этого, некоторые приписные графемы произносятся сами как конечный согласный слога или дают гортанную смычку. Некоторые префиксальные и надписные графемы не оказывают никакого влияния на звучание слога и играют только смыслоразличительную роль на письме. Все это наглядно иллюстрирует таб. \ref{tab:3}.
 
-\begin{tabularx}{\textwidth}{|X|*{8}{C{1}|}}
+\begin{tabularx}{\textwidth}{X*{8}{c@{\hspace{1em}}}}
 	\caption{Роли компонентов слога}
 	\label{tab:3}\\
-		\hline
-	Компонент слога &
-	\rotatebox{90}{Изменяет тон}
-		&
-		\rotatebox{90}{\parbox{5cm}{Озвончает качество гласного}} &
-		\rotatebox{90}{\parbox{5cm}{Изменяет качество гласного}} &
-		\rotatebox{90}{\parbox{5cm}{Вводит полугласный}} &
-		\rotatebox{90}{\parbox{5cm}{Изменяет согласный}} &
-		\rotatebox{90}{\parbox{5cm}{Назализирует согласный}} &
-		\rotatebox{90}{\parbox{5cm}{Читается как конечный согласный}} &
-		\rotatebox{90}{\parbox{5cm}{Играет смыслоразличительную роль на письме}}\\
-	\hline
-	Приписные графемы & + & - & + & - & - & - & + & - \\
-	\hline
-	Подписные графемы & + & - & - & + & + & - & - & - \\
-	\hline
-	Префиксальные графемы & + & + & - & - & - & + & - & + \\
-	\hline
-	Надписные графемы & + & + & - & - & - & + & - & + \\
-	\hline
+    \toprule
+	\makecell[c]{Компонент слога} &
+	\rotatebox{90}{\parbox{10em}{\small\raggedright Изменяет тон}} &
+    \rotatebox{90}{\parbox{10em}{\small\raggedright Озвончает качество гласного}} &
+    \rotatebox{90}{\parbox{10em}{\small\raggedright Изменяет качество гласного}} &
+    \rotatebox{90}{\parbox{10em}{\small\raggedright Вводит полугласный}} &
+    \rotatebox{90}{\parbox{10em}{\small\raggedright Изменяет согласный}} &
+    \rotatebox{90}{\parbox{10em}{\small\raggedright Назализирует согласный}} &
+    \rotatebox{90}{\parbox{10em}{\small\raggedright Читается как конечный согласный}} &
+    \rotatebox{90}{\parbox{10em}{\small\raggedright Играет смыс\-ло\-раз\-ли\-чи\-тель\-ную роль на письме}}\\
+	\midrule
+	Приписные графемы & + & -- & + & -- & -- & -- & + & -- \\
+	\addlinespace
+	Подписные графемы & + & -- & -- & + & + & -- & -- & -- \\
+	\addlinespace
+	Префиксальные графемы & + & + & -- & -- & -- & + & -- & + \\
+	\addlinespace
+	Надписные графемы & + & + & -- & -- & -- & + & -- & + \\
+	\bottomrule
 \end{tabularx}
-
 {\footnotesize{\emph{Примечание}. Знак + в таблице отнюдь не говорит, что вес компоненты слога данной группы (т.е. все приписные, все надписные и т.д.) играют в слоге указанную роль. Так, например, из 11 приписных только 4 меняют тон слога. Подробнее см. таб. \ref{tab:4}, \ref{tab:5}, \ref{tab:6}, \ref{tab:7}.}}
 
 Каждая группа составляющих производного слога оказывает определённое влияние на его основу.
@@ -182,22 +189,22 @@
 
 2. \emph{Вторичная приписная графема}. За приписными \prfA{ག}, \prfA{ང}, \prfA{བ}, \prfA{མ} может следовать ещё одна приписная --- вторичная приписная графема --- \prfB{ས}{\mfa{sa}}. Если \prfA{ས} следует за приписными \prfA{ག} или \prfA{བ}, то она играет только смыслоразличительную роль на письме, например: \prfC{ཐབས་}{\mfa{t'ɘp}\toneN}{'способ, метод'} --- \prfC{ཐབ་}{\mfa{t'ɘp}\toneN}{'печь, очаг'}. Если же вторичная приписная следует за приписными \prfA{ང}, \prfA{མ}, то ровный тон слога меняется на падающий, а восходящий --- на восходяще-падающий, например: \prfC{ཐེང་}{\mfa{t'eŋ}\toneR}{'хромой'} ---  \prfC{ཐེངས་}{\mfa{t'eŋ}\toneN}{'раз', 'один раз'},\prfC{གང་}{\mfa{k'aŋ}\toneV}{'где, куда'} --- \prfC{གངས་}{\mfa{k'aŋ}\toneVN}{'снег'}.
 
-\begin{tabularx}{\textwidth}{|L{1}|L{8}|L{3}|}
+\begin{tabularx}{\textwidth}{m{0.15\textwidth}m{0.5\textwidth}m{0.25\textwidth}}
 	\caption{Приписные графемы}\label{tab:4}
 	\\
-	\hline
-	Приписная графема & Её роль в слоге & Примеры\\
-	\hline
+	\toprule
+	\makecell[c]{Приписная\\графема} & \makecell[c]{Её роль в слоге} & \makecell[c]{Примеры}\\
+	\midrule
 	\endhead
-	\prfA{ག} & \makecell{Меняет тон и\\ даёт гортанную смычку\\
+	\prfA{ག} & \makecell[c]{Меняет тон и\\ даёт гортанную смычку\\
 $
 \left.\begin{aligned}
 \toneR \rightarrow \toneN \\
 \toneV \rightarrow \toneVN \\
 \end{aligned}\right\rbrace + 
 $ \toneG } & \makecell{\prfB{ཐག་}{\mfa{t'a}}\toneG\toneN\\ \prfB{དག་}{\mfa{t'a}}\toneG\toneVN}\\
-\hline
-\prfA{ས}, \prfA{ད} & \makecell{Меняет тон и гласный основы\\ слога, даёт гортанную смычку\\
+\addlinespace[1em]
+\prfA{ས}, \prfA{ད} & \makecell[c]{Меняет тон и гласный основы\\ слога, даёт гортанную смычку\\
 $
 \left.\begin{aligned}
 	\toneR \rightarrow \toneN \\
@@ -210,8 +217,8 @@ $ \makecell[l]{\mfa{a} {\unifont →} \mfa{ɛ} \\\mfa{u} {\unifont →} \mfa{y} 
 	\prfB{བོད་}{\mfa{p'ø}}\toneG\toneVN\\
 	\prfB{ཕུད་}{\mfa{p'y}}\toneG\toneVN
 }\\
-\hline
-\prfA{བ} & \makecell{Меняет тон и гласный \textit{a} основы \\слога, читается \textit{p}\\
+\addlinespace[1em]
+\prfA{བ} & \makecell[c]{Меняет тон и гласный \textit{a} основы \\слога, читается \textit{p}\\
 $
 \left.\begin{aligned}
 	\toneR \rightarrow \toneN \\
@@ -222,8 +229,8 @@ $ \makecell[c]{\mfa{a} {\unifont →} \mfa{ɘ}}} &
 	\prfB{ཁབ་}{\mfa{k'ɘp}}\toneN\\
 	\prfB{གབ་}{\mfa{k'ɘp}}\toneVN
 }\\	
-\hline
-\prfA{ལ}, \prfA{འི}\hyperref[tab:4:spec1]{$^*$} & \makecell{Меняет гласный основы \\слога и удлиняет его\\
+\addlinespace[1em]
+\prfA{ལ}, \prfA{འི}\hyperref[tab:4:spec1]{$^*$} & \makecell[c]{Меняет гласный основы \\слога и удлиняет его\\
 $
 \left.\begin{aligned}
 	\toneR \rightarrow \toneN \\
@@ -236,8 +243,8 @@ $ \makecell[l]{\mfa{a} {\unifont →} \mfa{ɛ:} \\\mfa{u} {\unifont →} \mfa{y:
 	\prfB{སའི་}{\mfa{sɛ:}}\toneR\\
 	\prfB{ཁོའི་}{\mfa{k'ø:}}\toneR
 }\\	
-\hline
-\prfA{ན} & \makecell{Меняет гласный основы \\слога и читается как \mfa{ñ}\\
+\addlinespace[1em]
+\prfA{ན} & \makecell[c]{Меняет гласный основы \\слога и читается как \mfa{ñ}\\
 $
 \left.\begin{aligned}
 	\text{\mfa{a}} \rightarrow \text{\mfa{ɛ}} \\
@@ -251,22 +258,22 @@ $ \mfa{ñ}} &
 	\prfB{གོན་}{\mfa{k'øñ}}\toneV\\
 	\prfB{ཀུན་}{\mfa{kyñ}}\toneR
 }\\	
-\hline
-\prfA{ར} & Удлиняет гласный основы слога & 
+\addlinespace[1em]
+\prfA{ར} & \makecell[c]{Удлиняет гласный основы слога} & 
 \makecell{
 	\prfB{ཐུར་}{\mfa{tu:}}\toneR\\
 	\prfB{མར་}{\mfa{ma:}}\toneV
 }\\	
-\hline
-\prfA{ང} & Читается как \mfa{ŋ}&
+\addlinespace[1em]
+\prfA{ང} & \makecell[c]{Читается как \mfa{ŋ}}&
 \makecell{
 	\prfA{གང་}{\mfa{k'aŋ}}\toneR\\
 	\prfA{དང་}{\mfa{t'aŋ}}\toneV
 }\\	
-\hline
-\prfA{མ} & Читается как \mfa{m̃} &
+\addlinespace[1em]
+\prfA{མ} & \makecell[c]{Читается как \mfa{m̃}} &
 \makecell{\prfB{དམ་}{\mfa{t'am̃}}\toneV}\\	
-\hline
+\bottomrule
 \end{tabularx}
 {\footnotesize{\label{tab:4:spec1}*\prfA{འི} --- вариант притяжательной падежной частицы (см. \ref{04_06_ppch}), которая присоединятся к основе открытого слога, выступая как суффикс.}}
 
@@ -274,24 +281,24 @@ $ \mfa{ñ}} &
 \prfA{ན}, \prfA{ར}, \prfA{ལ} (см. разд.\hyperref[sec:ss]{<<Служебные слова>>}).
 
 3. \emph{Префиксальные графемы}. Их наличие в слоге влияет на: а) тон и звонкость основы слога; б) звучание слога. Как влияют префиксальные графики на тон и звонкость основы слога, показано в таб. \ref{tab:5}.
-\begin{tabularx}{\textwidth}{|*{7}{C{1}|}}
+\begin{tabularx}{\textwidth}{*{7}{>{\centering\arraybackslash}m{0.12\textwidth}}}
 	\caption{Префиксальные графемы}\label{tab:5}\\
-	\hline
-	\multirow{2}{*}{Префикс} & \multicolumn{6}{c|}{Основы, с которыми сочетается префиксальная графема}\\
-	\cline{2-7}
-	& \multicolumn{3}{c|}{Остаются без изменения} & О\-звон\-ча\-ют\-ся & \multicolumn{2}{c|}{\makecell{Восходящий тон\\меняют на ровный}}\\
-	\hline
+	\toprule
+	\multirow[m]{2}{0.12\textwidth}{Пре\-фикс} & \multicolumn{6}{c}{\parbox[m]{0.72\textwidth}{\centering Основы, с которыми сочетается префиксальная графема}}\\
+	\cmidrule{2-7}
+	& \multicolumn{3}{c}{\parbox[m]{.36\textwidth}{\centering Остаются без изменения}} & \parbox[m]{0.12\textwidth}{\centering О\-звон\-ча\-ют\-ся} & \multicolumn{2}{c}{\parbox[m]{0.24\textwidth}{\centering Восходящий тон меняют на ровный}}\\
+	\midrule
 	\endhead
-	\prfA{ག} & \prfA{ཅ}, \prfA{ཏ}, \prfA{ཙ} & & \prfA{ཤ}, \prfA{ས}, \prfA{ཞ}, \prfA{ཟ} & \prfA{ད} & \prfA{ཉ}, \prfA{ན} & \prfA{ཡ}\\
-	\hline
-	\prfA{ད} & \prfA{ཀ}, \prfA{པ} & & & \prfA{ག}, \prfA{བ} & \prfA{ང}, \prfA{མ} & \\
-	\hline
-	\prfA{བ} & \prfA{ཀ}, \prfA{ཅ}, \prfA{ཏ}, \prfA{ཙ} & & \prfA{ཤ}, \prfA{ས}, \prfA{ཞ}, \prfA{ཟ} & \prfA{ག}, \prfA{ད} & & \\
-	\hline
-	\prfA{མ} & & \prfA{ཁ}, \prfA{ཆ}, \prfA{ཐ}, \prfA{ཚ} & & \prfA{ག}, \prfA{ཇ}, \prfA{ད}, \prfA{ཛ} & \prfA{ང}, \prfA{ཉ}, \prfA{མ} & \\
-	\hline
-	\prfA{འ} & \prfA{ཁ}, \prfA{ཆ}, \prfA{ཐ}, \prfA{ཕ}, \prfA{ཚ} & & & \prfA{ག}, \prfA{ཇ}, \prfA{ད}, \prfA{བ}, \prfA{ཛ} & & \\
-	\hline
+	\prfA{ག} & \prfA{ཅ} \prfA{ཏ} \prfA{ཙ} & & \prfA{ཤ} \prfA{ས} \prfA{ཞ} \prfA{ཟ} & \prfA{ད} & \prfA{ཉ} \prfA{ན} & \prfA{ཡ}\\
+	\addlinespace
+	\prfA{ད} & \prfA{ཀ} \prfA{པ} & & & \prfA{ག} \prfA{བ} & \prfA{ང} \prfA{མ} & \\
+	\addlinespace
+	\prfA{བ} & \prfA{ཀ} \prfA{ཅ} \prfA{ཏ} \prfA{ཙ} & & \prfA{ཤ} \prfA{ས} \prfA{ཞ} \prfA{ཟ} & \prfA{ག} \prfA{ད} & & \\
+	\addlinespace
+	\prfA{མ} & & \prfA{ཁ} \prfA{ཆ} \prfA{ཐ} \prfA{ཚ} & & \prfA{ག} \prfA{ཇ} \prfA{ད} \prfA{ཛ} & \prfA{ང} \prfA{ཉ} \prfA{མ} & \\
+	\addlinespace
+	\prfA{འ} & & \prfA{ཁ} \prfA{ཆ} \prfA{ཐ} \prfA{ཕ} \prfA{ཚ} & & \prfA{ག} \prfA{ཇ} \prfA{ད} \prfA{བ} \prfA{ཛ} & & \\
+	\bottomrule
 \end{tabularx}
 
 На звучание слога оказывают влияние префиксы \prfA{མ} и \prfA{འ}, а также префикс \prfA{ད}, если он стоит перед основой слога \prfA{བ}.
@@ -302,53 +309,53 @@ $ \mfa{ñ}} &
 
 4. \emph{Подписные графемы}. \prfA{ཝ}, \prfA{ཡ}, \prfA{ར}, \prfA{ལ}, подписываясь под основой слога, меняют свое начертание (кроме \prfA{ལ}), и оказывают определённое влияние на произношение слога (см. таб. \ref{tab:6}).
 
-\begin{tabularx}{\textwidth}{|L{4}|L{4}|L{10}|L{12}|}
+\begin{tabularx}{\textwidth}{p{0.1\textwidth}p{0.1\textwidth}p{0.25\textwidth}p{0.45\textwidth}}
 	\caption{Подписные графемы}\label{tab:6}\\
-	\hline
-	Под\-пис\-ная гра\-фе\-ма & Ха\-рак\-тер на\-чер\-та\-ния & Какие сложные графемы * образует & Роль в слоге\\
-	\hline
+	\toprule
+	\parbox[t]{0.1\textwidth}{\small\centering Под\-пис\-ная гра\-фе\-ма} & \parbox[t]{0.1\textwidth}{\small\centering Ха\-рак\-тер на\-чер\-та\-ния} & \parbox[t]{0.25\textwidth}{\small\centering Какие сложные графемы * образует} & \parbox[t]{0.45\textwidth}{\small\centering Роль в слоге}\\
+	\midrule
 	\endhead
-	\prfA{ཝ} & \prfA{ ྭ} & \prfA{ཀྭ}, \prfA{ཁྭ}, \prfA{གྭ}, \prfA{ཅྭ}, \prfA{ཉྭ}, \prfA{ཏྭ}, \prfA{དྭ}, \prfA{ཙྭ}, \prfA{ཚྭ}, \prfA{ཞྭ}, \prfA{ཟྭ}, \prfA{རྭ}, \prfA{ལྭ}, \prfA{ཤྭ}, \prfA{སྭ}, \prfA{ཧྭ}, \prfA{གྲྭ} & Играет только смыслоразличительную роль на письме, например:
+	\prfA{ཝ} & \prfA{ ྭ} & \prfA{ཀྭ} \prfA{ཁྭ} \prfA{གྭ} \prfA{ཅྭ} \prfA{ཉྭ} \prfA{ཏྭ} \prfA{དྭ} \prfA{ཙྭ} \prfA{ཚྭ} \prfA{ཞྭ} \prfA{ཟྭ} \prfA{རྭ} \prfA{ལྭ} \prfA{ཤྭ} \prfA{སྭ} \prfA{ཧྭ} \prfA{གྲྭ} & Играет только смыслоразличительную роль на письме, например:
 	\prfC{ཤ་}{\mfa{sja}\toneR}{<<мясо>>} --- \prfC{ཤྭ་}{\mfa{sja}\toneR}{<<олень>>};
 	\prfC{རྩ་}{\mfa{tsa}\toneR}{<<корень>>} --- \prfC{རྩྭ་}{\mfa{tsa}\toneR}{<<трава>>}\\
-	\hline
-	\multirow{3}{*}{\prfA{ཡ}} & \multirow{3}{*}{\prfA{ ྱ}} & 1) \prfA{ཀྱ}, \prfA{ཁྱ}, \prfA{གྱ} & Читается как \mfa{j}, например: \prfB{ཀྱ}{\mfa{kja}\toneR}, \prfB{ཁྱ}{\mfa{k'ja}\toneR}, \prfB{གྱ}{\mfa{k'ja}\toneV}\\
-	& & 2) \prfA{པྱ}, \prfA{ཕྱ}, \prfA{བྱ} & Меняет чтение основы на \mfa{tsj} и \mfa{ts'j}, например: \prfB{པྱ}{\mfa{tsja}\toneR}, \prfB{ཕྱ}{\mfa{ts'ja}\toneR}, \prfB{བྱ}{\mfa{ts'ja}\toneR}\\
+	\addlinespace
+	\multirow[t]{3}{*}{\prfA{ཡ}} & \multirow[t]{3}{*}{\prfA{ ྱ}} & 1) \prfA{ཀྱ} \prfA{ཁྱ} \prfA{གྱ} & Читается как \mfa{j}, например: \prfB{ཀྱ}{\mfa{kja}\toneR}, \prfB{ཁྱ}{\mfa{k'ja}\toneR}, \prfB{གྱ}{\mfa{k'ja}\toneV}\\
+	& & 2) \prfA{པྱ} \prfA{ཕྱ} \prfA{བྱ} & Меняет чтение основы на \mfa{tsj} и \mfa{ts'j}, например: \prfB{པྱ}{\mfa{tsja}\toneR}, \prfB{ཕྱ}{\mfa{ts'ja}\toneR}, \prfB{བྱ}{\mfa{ts'ja}\toneR}\\
 	& & 3) \prfA{མྱ} & Меняет чтение основы на \mfa{nj}, например: \prfB{མྱ}{\mfa{nja}\toneR}\\
-	\hline
-	\multirow{3}{*}{\prfA{ར}} & \multirow{3}{*}{\prfA{ ྲ}} & 1) \prfA{ཀྲ}, \prfA{ཏྲ}*, \prfA{པྲ}, \prfA{ཁྲ}, \prfA{གྲ}, \prfA{དྲ}, \prfA{ཐྲ}*, \prfA{ཕྲ}, \prfA{བྲ} & Меняет чтение основы на \mfa{tš} и \mfa{tš'}, например: \prfA{ཀྲ}, \prfA{ཏྲ}, \prfA{པྲ} читаются \mfa{tša}\toneR; \prfA{ཁྲ}, \prfA{ཐྲ}, \prfA{ཕྲ} читаются \mfa{tš'a}\toneR; \prfA{གྲ}, \prfA{དྲ}, \prfA{བྲ} читаются \mfa{tša}\toneV\\
+	\addlinespace
+	\multirow[t]{3}{*}{\prfA{ར}} & \multirow[t]{3}{*}{\prfA{ ྲ}} & 1) \prfA{ཀྲ} \prfA{ཏྲ}* \prfA{པྲ} \prfA{ཁྲ} \prfA{གྲ} \prfA{དྲ} \prfA{ཐྲ}* \prfA{ཕྲ} \prfA{བྲ} & Меняет чтение основы на \mfa{tš} и \mfa{tš'}, например: \prfA{ཀྲ} \prfA{ཏྲ} \prfA{པྲ} читаются \mfa{tša}\toneR; \prfA{ཁྲ} \prfA{ཐྲ} \prfA{ཕྲ} читаются \mfa{tš'a}\toneR; \prfA{གྲ} \prfA{དྲ} \prfA{བྲ} читаются \mfa{tša}\toneV\\
 	& & 2) \prfA{ཧྲ} & Меняет чтение основы на \mfa{š}, например \prfB{ཧྲ}{\mfa{ša}}\toneR\\
-	& & 3) \prfA{ནྲ}, \prfA{མྲ}, \prfA{ཤྲ}, \prfA{སྲ} & Играет только смыслоразличительную роль на письме\\
-	\hline
-	\multirow{2}{*}{\prfA{ལ}} & \multirow{2}{*}{\prfA{ ླ}} & 1) \prfA{ཀླ}, \prfA{གླ}, \prfA{བླ}, \prfA{རླ}, \prfA{སླ} & У \prfA{ག}, \prfA{བ}, \prfA{ར} меняет восходящий тон на ровный высокого регистра,  а также меняет чтение основы на \mfa{la}, например: \prfB{ཀླ}{\mfa{la}}, \prfB{གླ}{\mfa{la}}\toneR\\
+	& & 3) \prfA{ནྲ} \prfA{མྲ} \prfA{ཤྲ} \prfA{སྲ} & Играет только смыслоразличительную роль на письме\\
+	\addlinespace
+	\multirow[t]{2}{*}{\prfA{ལ}} & \multirow[t]{2}{*}{\prfA{ ླ}} & 1) \prfA{ཀླ} \prfA{གླ} \prfA{བླ} \prfA{རླ} \prfA{སླ} & У \prfA{ག} \prfA{བ} \prfA{ར} меняет восходящий тон на ровный высокого регистра, а также меняет чтение основы на \mfa{la}, например: \prfB{ཀླ}{\mfa{la}}, \prfB{གླ}{\mfa{la}}\toneR\\
 	& & 2) \prfA{ཟླ} & Меняет чтение основы на \mfa{da}, например: \prfB{ཟླ}{\mfa{da}}\\
-	\hline
+	\bottomrule
 \end{tabularx}
-{\footnotesize{* Сложные графемы, помеченные звёздочкой, употреблялись только в древнетибетском.}}
+{\footnotesize * Сложные графемы, помеченные звёздочкой, употреблялись только в древнетибетском.}
 
 5. \emph{Надписные графемы}. Их роль видна из следующей таблицы (таб. \ref{tab:7}).
 
-\begin{tabularx}{\textwidth}{|L{4}|L{4}|L{7}|L{14}|}
+\begin{tabularx}{\textwidth}{p{0.1\textwidth}p{0.1\textwidth}p{0.25\textwidth}p{0.45\textwidth}}
 	\caption{Надписные графемы}\label{tab:7}\\
-	\hline
-	Над\-пис\-ная графема* & Характер начертания & Какие сложные графемы образует & Роль в слоге\\
-	\hline
+	\toprule
+	\parbox[t]{0.1\textwidth}{\small\centering Над\-пис\-ная графема*} & \parbox[t]{0.1\textwidth}{\small\centering Характер начертания} & \parbox[t]{0.25\textwidth}{\small\centering Какие сложные графемы образует} & \parbox[t]{0.45\textwidth}{\small\centering Роль в слоге}\\
+	\midrule
 	\endhead
-	\multirow{3}{*}{\prfA{ར}} & \multirow{3}{*}{\prfA{ར}} & 1) \prfA{རྐ}, \prfA{རྟ}, \prfA{རྩ} & Играет только смыслоразличительную роль на письме\\
-	& & 2) \prfA{རྒ},\prfA{རྗ},\prfA{རྡ},\prfA{རྦ},\prfA{རྫ} & Озвончает основу, например: \prfB{རྒ}{\mfa{ka}\toneV}, \prfB{རྡ}{\mfa{ta}\toneV}\\
-	& & 3) \prfA{རྔ}, \prfA{རྙ}, \prfA{རྣ}, \prfA{རྨ} & Меняет восходящий тон на ровный высокого регистра, например: \prfB{རྔ}{\mfa{ŋa}\toneR}\\
-	\hline
-	\multirow{4}{*}{\prfA{ལ}} & \multirow{4}{*}{\prfA{ལ}} & 1) \prfA{ལྐ}, \prfA{ལྕ}, \prfA{ལྟ}, \prfA{ལྤ} & Играет только смыслоразличительную роль на письме, например: \prfC{རྟ་}{\mfa{ta}\toneR}{<<лошадь>>} --- \prfC{ལྟ་}{\mfa{ta}\toneR}{<<глядеть>>}\\
-	& & 2) \prfA{ལྒ}, \prfA{ལྗ}, \prfA{ལྡ}, \prfA{ལྦ} & Озвончает и назализует основу, например: \prfB{ལྒ}{\mfa{ŋka}\toneV}; \prfB{ལྗ}{\mfa{ñsja}\toneV}; \prfB{ལྡ}{\mfa{ñsa}\toneV}; \prfB{ལྦ}{\mfa{m̃pa}\toneV}\\
+	\multirow[t]{3}{*}{\prfA{ར}} & \multirow[t]{3}{*}{\prfA{ར}} & 1) \prfA{རྐ} \prfA{རྟ} \prfA{རྩ} & Играет только смыслоразличительную роль на письме\\
+	& & 2) \prfA{རྒ} \prfA{རྗ} \prfA{རྡ} \prfA{རྦ} \prfA{རྫ} & Озвончает основу, например: \prfB{རྒ}{\mfa{ka}\toneV}, \prfB{རྡ}{\mfa{ta}\toneV}\\
+	& & 3) \prfA{རྔ} \prfA{རྙ} \prfA{རྣ} \prfA{རྨ} & Меняет восходящий тон на ровный высокого регистра, например: \prfB{རྔ}{\mfa{ŋa}\toneR}\\
+	\addlinespace
+	\multirow[t]{4}{*}{\prfA{ལ}} & \multirow[t]{4}{*}{\prfA{ལ}} & 1) \prfA{ལྐ} \prfA{ལྕ} \prfA{ལྟ} \prfA{ལྤ} & Играет только смыслоразличительную роль на письме, например: \prfC{རྟ་}{\mfa{ta}\toneR}{<<лошадь>>} --- \prfC{ལྟ་}{\mfa{ta}\toneR}{<<глядеть>>}\\
+	& & 2) \prfA{ལྒ} \prfA{ལྗ} \prfA{ལྡ}, \prfA{ལྦ} & Озвончает и назализует основу, например: \prfB{ལྒ}{\mfa{ŋka}\toneV}; \prfB{ལྗ}{\mfa{ñsja}\toneV}; \prfB{ལྡ}{\mfa{ñsa}\toneV}; \prfB{ལྦ}{\mfa{m̃pa}\toneV}\\
 	& & 3) \prfA{ལྔ} & Меняет восходящий тон на ровный высокого регистра, например: \prfB{ལྔ}{\mfa{ŋa}\toneR}\\
 	& & 4) \prfA{ལྷ} & Меняет чтение, например: \prfB{ལྷ}{\mfa{lha}\toneR}\\
-	\hline
-	\multirow{3}{*}{\prfA{ས}} & \multirow{3}{*}{\prfA{ས}} & 1) \prfA{སྐ}, \prfA{སྟ}, \prfA{སྤ}, \prfA{སྩ} & Играет только смыслоразличительную роль на письме, например: \prfC{རྐང་}{\mfa{kaŋ}}{<<костный мозг>>} --- \prfC{སྐང་}{\mfa{kaŋ}}{<<наполнить, удовлетворять>>}\\
-	& & 2) \prfA{སྒ}, \prfA{སྡ}, \prfA{སྦ} & Озвончает основу, например: \prfB{སྒ}{\mfa{ka}\toneV}, \prfB{སྡ}{\mfa{ta}\toneV}\\
-	& & 3) \prfA{སྔ}, \prfA{སྙ}, \prfA{སྣ}, \prfA{སྨ} & Меняет восходящий тон на ровный высокого регистра, например: \prfB{སྔ}{\mfa{ŋa}\toneR}\\
-	\hline
+	\addlinespace
+	\multirow[t]{3}{*}{\prfA{ས}} & \multirow[t]{3}{*}{\prfA{ས}} & 1) \prfA{སྐ} \prfA{སྟ} \prfA{སྤ} \prfA{སྩ} & Играет только смыслоразличительную роль на письме, например: \prfC{རྐང་}{\mfa{kaŋ}}{<<костный мозг>>} --- \prfC{སྐང་}{\mfa{kaŋ}}{<<наполнить, удовлетворять>>}\\
+	& & 2) \prfA{སྒ} \prfA{སྡ} \prfA{སྦ} & Озвончает основу, например: \prfB{སྒ}{\mfa{ka}\toneV}, \prfB{སྡ}{\mfa{ta}\toneV}\\
+	& & 3) \prfA{སྔ} \prfA{སྙ} \prfA{སྣ}, \prfA{སྨ} & Меняет восходящий тон на ровный высокого регистра, например: \prfB{སྔ}{\mfa{ŋa}\toneR}\\
+	\bottomrule
 \end{tabularx}
-{\footnotesize{* Надписные графемы \prfA{ར}, \prfA{ལ}, \prfA{ས} помимо изменения тона играют также смысло различительную роль на письме, например \prfA{སྔ་}, \prfA{ལྔ་}, \prfA{རྔ་} звучат одинаково \mfa{ŋa}, но имеют различные значения --- соответственно: <<старый, прежний>>, <<пять>>, <<барабан>>; \prfA{སྙིང་} и \prfA{རྙིང་} читаются каждый \mfa{njiŋ}, но значат соответственно <<душа, сердце>> и <<старый, изношенный>>.}}
+{\footnotesize{* Надписные графемы \prfA{ར} \prfA{ལ} \prfA{ས} помимо изменения тона играют также смысло различительную роль на письме, например \prfA{སྔ་} \prfA{ལྔ་} \prfA{རྔ་} звучат одинаково \mfa{ŋa}, но имеют различные значения --- соответственно: <<старый, прежний>>, <<пять>>, <<барабан>>; \prfA{སྙིང་} и \prfA{རྙིང་} читаются каждый \mfa{njiŋ}, но значат соответственно <<душа, сердце>> и <<старый, изношенный>>.}}
 
 \section{Тон и звучание слогов в двусложном слове}
 
@@ -356,20 +363,21 @@ $ \mfa{ñ}} &
 
 1. В двусложном слове изменяются тоны его составляющих (см. таб. \ref{tab:8}).
 
-\begin{tabularx}{\textwidth}{|X|X|X|}
+\begin{tabularx}{\textwidth}{ccc}
 	\caption{Таблица смены тонов}\label{tab:8}\\
-	\hline
-	Тон первого слога & Тон второго слога & Тоны слогов в слове\\ \hline
+	\toprule
+	\makecell{Тон\\первого\\слога} & \makecell{Тон\\второго\\слога} & \makecell{Тоны\\слогов\\в слове}\\ \midrule
 	\endhead
-	\toneR & \toneV & \toneR{} \toneR\\ \hline
-	\toneR & \toneVN & \toneR{} \toneN\\ \hline
-	\toneV & \toneV & \toneV{} \toneR\\ \hline
-	\toneN & \toneR & \toneR{} \toneR\\ \hline
-	\toneN & \toneN & \toneR{} \toneN\\ \hline
-	\toneN & \toneVN & \toneR{} \toneN\\ \hline
-	\toneVN & \toneR & \toneV{} \toneR\\ \hline
-	\toneVN & \toneN & \toneV{} \toneN\\ \hline
-	\toneVN & \toneVN & \toneV{} \toneN\\ \hline
+	\toneR & \toneV & \toneR{} \toneR\\
+	\toneR & \toneVN & \toneR{} \toneN\\
+	\toneV & \toneV & \toneV{} \toneR\\
+	\toneN & \toneR & \toneR{} \toneR\\
+	\toneN & \toneN & \toneR{} \toneN\\
+	\toneN & \toneVN & \toneR{} \toneN\\ \addlinespace
+	\toneVN & \toneR & \toneV{} \toneR\\ \addlinespace
+	\toneVN & \toneN & \toneV{} \toneN\\ \addlinespace
+	\toneVN & \toneVN & \toneV{} \toneN\\ \addlinespace
+	\bottomrule
 \end{tabularx}
 
 2. Согласные, которые записываются первыми пятью корневыми графемами третьего ряда тибетского алфавита (\prfA{ག}, \prfA{ཇ}, \prfA{ད}, \prfA{བ}, \prfA{ཛ}), выступая в качестве второго слога в слове, озвончаются, например: \prfB{ཡི}{\mfa{ji}\toneV} + \prfB{གེ}{\mfa{k'e}\toneV} {\unifont →} \prfC{ཡི་གེ་}{\mfa{ji}\toneV{}\mfa{ke}\toneR}{<<буква, письмена>>}.
@@ -416,10 +424,11 @@ $ \mfa{ñ}} &
 
 Существует около 30 систем записи тибетских корневых графем латинскими буквами, большинство из которых в значительной части совпадает друг с другом. Наиболее близки системы, предложенные Чома де Кёрёши и Т. Уайли. Наиболее удобна для транслитерации, пожалуй, система Т. Уайли, не содержащая диакритических знаков. Ниже приводится шесть систем записи корневых графем тибетского алфавита латинскими буквами (см. \ref{tab:9}).
 
-\begin{longtabu} to \linewidth {|X[1,c] | X[1,c] | X[1,c] |X[1,c] |X[1,c] |X[1,c] |X[1,c] |}
-	\everyrow {\tabucline{-}}
+\begin{tabularx}{\textwidth}{*{7}c}
 	\caption{Системы транслитерации корневых графем}\label{tab:9}\\
-	Корневая графема & Чома де Кёрёши & Х.А.Ешке & С.Ч.Дас & Ж.Бако & Т.Уайли & Е.Рихтер\\
+	\toprule
+	\parbox[m]{0.12\textwidth}{\small\centering Корневая графема} & \parbox[m]{0.12\textwidth}{\small\centering Чома де Кёрёши} & \parbox[m]{0.12\textwidth}{\small\centering Х.А.Ешке} & \parbox[m]{0.12\textwidth}{\small\centering С.Ч.Дас} & \parbox[m]{0.12\textwidth}{\small\centering Ж.Бако} & \parbox[m]{0.12\textwidth}{\small\centering Т.Уайли} & \parbox[m]{0.12\textwidth}{\small\centering Е.Рихтер}\\
+	\midrule
 	\endhead
 	%1
 	\prfA{ཀ} & \textit{ka} & \textit{ka} & \textit{ka} & \textit{ka} & \textit{ka} & \textit{ka}\\
@@ -427,10 +436,10 @@ $ \mfa{ñ}} &
 	\prfA{ག} & \textit{ga} & \textit{ga} & \textit{ga} & \textit{ga} & \textit{ga} & \textit{ga}\\
 	\prfA{ང} & \textit{nga} & \textit{\.{n}a} & \textit{\^{n}a} & \textit{\.{n}a} & \textit{nga} & \textit{\.{n}a}\\
 	%2
-	\prfA{ཅ} & \textit{cha} & \textit{ca} & \textit{ca} & \textit{\u{c}a} & \textit{ca} & \textit{t\u{s}a}\\
-	\prfA{ཆ} & \textit{chha} & \textit{cha} & \textit{cha} & \textit{\u{c}ha} & \textit{cha} & \textit{t\u{s}ha}\\
-	\prfA{ཇ} & \textit{ja} & \textit{ja} & \textit{ja} & \textit{\u{j}a} & \textit{ja} & \textit{d\u{z}a}\\
-	\prfA{ཉ} & \textit{nya} & \textit{nya} & \textit{\~{n}a} & \textit{\~{n}a} & \textit{nya} & \textit{\~{n}a}\\
+	\prfA{ཅ} & \textit{cha} & \textit{ca} & \textit{ca} & \textit{\u{c}a} & \textit{ca} & \textit{t\u{s}a}\\ 
+	\prfA{ཆ} & \textit{chha} & \textit{cha} & \textit{cha} & \textit{\u{c}ha} & \textit{cha} & \textit{t\u{s}ha}\\ 
+	\prfA{ཇ} & \textit{ja} & \textit{ja} & \textit{ja} & \textit{\u{j}a} & \textit{ja} & \textit{d\u{z}a}\\ 
+	\prfA{ཉ} & \textit{nya} & \textit{nya} & \textit{\~{n}a} & \textit{\~{n}a} & \textit{nya} & \textit{\~{n}a}\\ 
 	%3
 	\prfA{ཏ} & \textit{ta} & \textit{ta} & \textit{ta} & \textit{ta} & \textit{ta} & \textit{ta}\\
 	\prfA{ཐ} & \textit{tha} & \textit{t'a} & \textit{tha} & \textit{tha} & \textit{tha} & \textit{tha}\\
@@ -443,11 +452,11 @@ $ \mfa{ñ}} &
 	\prfA{མ} & \textit{ma} & \textit{ma} & \textit{ma} & \textit{ma} & \textit{ma} & \textit{ma}\\
 	%5
 	\prfA{ཙ} & \textit{tsa} & \textit{tsa} & \textit{tsa} & \textit{ca} & \textit{tsa} & \textit{tsa}\\
-	\prfA{ཚ} & \textit{ts'ha} & \textit{ts'a} & \textit{tsha} & \textit{cha} & \textit{tsha} & \textit{tsha}\\
-	\prfA{ཛ} & \textit{dsa} & \textit{dza} & \textit{dsa} & \textit{ja} & \textit{dza} & \textit{dza}\\
+	\prfA{ཚ} & \textit{ts'ha} & \textit{ts'a} & \textit{tsha} & \textit{cha} & \textit{tsha} & \textit{tsha}\\ 
+	\prfA{ཛ} & \textit{dsa} & \textit{dza} & \textit{dsa} & \textit{ja} & \textit{dza} & \textit{dza}\\ 
 	\prfA{ཝ} & \textit{wa} & \textit{wa} & \textit{ua} & \textit{va} & \textit{wa} & \textit{wa}\\
 	%6
-	\prfA{ཞ} & \textit{zha} & \textit{\'{z}a} & \textit{sha} & \textit{\u{z}a} & \textit{zha} & \textit{\u{z}a}\\
+	\prfA{ཞ} & \textit{zha} & \textit{\'{z}a} & \textit{sha} & \textit{\u{z}a} & \textit{zha} & \textit{\u{z}a}\\ 
 	\prfA{ཟ} & \textit{za} & \textit{za} & \textit{za} & \textit{za} & \textit{za} & \textit{za}\\
 	\prfA{འ} & \textit{ha} & \textit{'a} & \textit{ha} & \textit{'a} & \textit{'a} & \textit{'a}\\
 	\prfA{ཡ} & \textit{ya} & \textit{ya} & \textit{ya} & \textit{ya} & \textit{ya} & \textit{ya}\\
@@ -460,7 +469,8 @@ $ \mfa{ñ}} &
 	\prfA{ས} & \textit{sa} & \textit{sa} & \textit{sa} & \textit{sa} & \textit{sa} & \textit{sa}\\
 	\prfA{ཧ} & \textit{ha} & \textit{ha} & \textit{ha} & \textit{ha} & \textit{ha} & \textit{ha}\\
 	\prfA{ཨ} & \textit{a} & \textit{'a} & \textit{a} & \textit{a} & \textit{a} & \textit{a}\\
-\end{longtabu}
+	\bottomrule
+\end{tabularx}
 
 При транслитерации тибетского слога запись производится в строчку слева направо.
 
@@ -494,11 +504,15 @@ $ \mfa{ñ}} &
 
 В последнее время предложены также различные системы транслитерации тибетских графем русскими буквами. Приводим одну из них: В.В. Семичова -- К. Седлачека (см. таб. \ref{tab:10}).
 
-\begin{longtabu} to \linewidth {|X[1,c] X[1,c]|X[1,c] X[1,c]|X[1,c] X[1,c]|X[1,c] X[1,c]|}
-	\everyrow {\tabucline{-}}
+\begin{tabularx}{\textwidth}{*{8}c}
 	\caption{Транслитерация русскими буквами}\label{tab:10}\\
-	Ти\-бет\-ские графемы & Транс\-ли\-те\-ра\-ция & Ти\-бет\-ские графемы & Транс\-ли\-те\-ра\-ция &
-	Ти\-бет\-ские графемы & Транс\-ли\-те\-ра\-ция & Ти\-бет\-ские графемы & Транс\-ли\-те\-ра\-ция\\
+	\toprule
+	\parbox[m]{0.10\textwidth}{\small\centering Ти\-бет\-ские гра\-фе\-мы} & \parbox[m]{0.10\textwidth}{\small\centering Транс\-ли\-те\-ра\-ция} &
+	\parbox[m]{0.10\textwidth}{\small\centering Ти\-бет\-ские гра\-фе\-мы} & \parbox[m]{0.10\textwidth}{\small\centering Транс\-ли\-те\-ра\-ция} &
+	\parbox[m]{0.10\textwidth}{\small\centering Ти\-бет\-ские гра\-фе\-мы} & \parbox[m]{0.10\textwidth}{\small\centering Транс\-ли\-те\-ра\-ция} &
+	\parbox[m]{0.10\textwidth}{\small\centering Ти\-бет\-ские гра\-фе\-мы} & \parbox[m]{0.10\textwidth}{\small\centering Транс\-ли\-те\-ра\-ция}\\
+	\midrule
+	\endhead
 	\prfA{ཀ} & \textit{ка} & \prfA{ཁ} & \textit{кха} & \prfA{ག} & \textit{га} & \prfA{ང} & \textit{\.{н}а}\\
 	\prfA{ཅ} & \textit{ча} & \prfA{ཆ} & \textit{чха} & \prfA{ཇ} & \textit{джа} & \prfA{ཉ} & \textit{ня}\\
 	\prfA{ཏ} & \textit{та} & \prfA{ཐ} & \textit{тха} & \prfA{ད} & \textit{да} & \prfA{ན} & \textit{на}\\
@@ -507,7 +521,8 @@ $ \mfa{ñ}} &
 	\prfA{ཞ} & \textit{жа} & \prfA{ཟ} & \textit{за} & \prfA{འ} & \textit{'} & \prfA{ཡ} & \textit{я}\\
 	\prfA{ར} & \textit{ра} & \prfA{ལ} & \textit{ла} & \prfA{ཤ} & \textit{ша} & \prfA{ས} & \textit{са}\\
 	\prfA{ཧ} & \textit{ха} & \prfA{ཨ} & \textit{а} & & & & \\
-\end{longtabu}
+	\bottomrule
+\end{tabularx}
 
 \section{Порядок расположения словарных статей в тибетско-тибетских и тибетско-европейских словарях}
 
