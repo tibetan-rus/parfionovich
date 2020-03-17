@@ -1,11 +1,21 @@
 % !TEX program = xelatex
-\documentclass[a4paper,14pt,openany,DIV=20]{scrreprt}
+\documentclass[a4paper,fontsize=14pt,openany,DIV=20]{scrreprt}
 \input{parfionovich.sty}
+\usepackage{gitinfo2}
 \author{Парфионович Юрий Михайлович}
 \title{Тибетский письменный язык}
 
 \begin{document}
-\maketitle
+\begin{titlepage}
+    \centering
+    \vspace*{\fill}
+    {\Large Ю.М. Парфионович\par}
+    \vspace{5em}
+    {\Huge Тибетский письменный язык\par}
+    \vspace*{\fill}
+    Сборка\gitRels: \gitAbbrevHash{} (\gitAuthorDate)
+\end{titlepage}
+%\maketitle
 \setcounter{tocdepth}{4}
 \tableofcontents
 \input{00_техпредисловие.tex}
