@@ -2,8 +2,11 @@
 \documentclass[a4paper,fontsize=14pt,openany,DIV=20]{scrreprt}
 \input{parfionovich.sty}
 \usepackage{gitinfo2}
+\usepackage{makeidx}
 \author{Парфионович Юрий Михайлович}
 \title{Тибетский письменный язык}
+
+\makeindex
 
 \begin{document}
 \begin{titlepage}
@@ -30,4 +33,8 @@
 \input{04_06_служебные.tex}
 \input{05_синтаксис.tex}
 \input{06_приложение_библиография.tex}
+\newpage
+\addcontentsline{toc}{chapter}{Указатель служебных слов и частиц}
+\renewcommand\indexname{Указатель служебных слов и частиц}
+\printindex
 \end{document}
